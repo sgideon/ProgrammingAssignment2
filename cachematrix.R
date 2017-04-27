@@ -1,38 +1,14 @@
-## This script contains two functions.
-## One caches the inverse of a matrix and the other creates the inverse.
+## Two functions: one caches the inverse of a matrix and the other creates the inverse.
 
+## Write a short comment describing this function
 
-## This function checks for the cached inverse of matrix and if it doesn't exist it creates it.
 makeCacheMatrix <- function(x = matrix()) {
-  i <- NULL
-  
-    setMatrix <- function(y) {
-    x <<- y
-    i <<- NULL
-    }
-  
-  getMatrix <- function() x                                   
-  setInverse <- function(inverse) i <<- inverse  
-  getInverse <- function() i                     
-  list(setMatrix = setMatrix, getMatrix = getMatrix,
-       setInverse = setInverse, getInverse = getInverse)
-  
+
 }
 
 
-## This function creates the inverse of the matrix passed from makeCacheMatrix above.
+## Write a short comment describing this function
+
 cacheSolve <- function(x, ...) {
-  
-  i <- x$getInverse()
- 
-   if(!is.null(i)) {                       
-    message("Getting Cached Matrix...")    
-    return(i)                             
-   }
-  
-  MatrixData <- x$getMatrix()                      
-  i <- solve(MatrixData, ...)             
-  x$setInverse(i)                         
-  return(i)                               
-  
+        ## Return a matrix that is the inverse of 'x'
 }
